@@ -21,7 +21,6 @@ public class Hooks {
 
     @Before
     public void openBrowser() throws MalformedURLException {
-        System.out.println("Browser Init");
         driver = DriverFactory.getDriver(DriverFactory.Browsers.FIREFOX);
         driver.manage().deleteAllCookies();
     }
